@@ -15,6 +15,7 @@ html {
   --black: #000;
   --blue: #061928;
   --purple: #A97DA2;
+  --yellow: #FFD700;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -428,7 +429,8 @@ header > div aside a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("../img/hero.");
+  margin-top: 140px;
+  background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -440,7 +442,6 @@ header > div aside a {
   font-size: 5rem;
   font-weight: 900;
   line-height: 117px;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -457,7 +458,6 @@ header > div aside a {
   font-size: 2rem;
   font-weight: 400;
   line-height: 47px;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
   margin-top: -25px;
 }
 @media (min-width: 768px) {
