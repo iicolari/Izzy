@@ -1,14 +1,6 @@
 #hero{
     height: 90vh;
     width:100%;
-    
-
-    @include xl{
-        display:grid;
-        grid-template-areas: ". hero .";
-        grid-template-columns: auto 1440px auto;
-
-    }
 
     >div{
         overflow: hidden;
@@ -31,7 +23,7 @@
         #hero-content{
             color:var(--black);;
             text-align: left;
-            margin-top: 400px;
+            margin-top: 300px;
             margin-left: 100px;
             
 

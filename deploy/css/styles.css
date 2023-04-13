@@ -424,13 +424,6 @@ header > div aside a {
   height: 90vh;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  #hero {
-    display: grid;
-    grid-template-areas: ". hero .";
-    grid-template-columns: auto 1440px auto;
-  }
-}
 #hero > div {
   overflow: hidden;
   height: 100%;
@@ -452,7 +445,7 @@ header > div aside a {
 #hero article #hero-content {
   color: var(--black);
   text-align: left;
-  margin-top: 400px;
+  margin-top: 300px;
   margin-left: 100px;
 }
 #hero article #hero-content h1 {
