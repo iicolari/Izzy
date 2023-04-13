@@ -21,17 +21,19 @@
 
     article{
         display:flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
         height: 100%;
-        margin-top: 140px;
         background-image: url('../img/hero.jpg');
         background-position: center;
         background-size: cover;
 
         #hero-content{
-            color:var(--white);;
-            text-align: center;
+            color:var(--black);;
+            text-align: left;
+            margin-top: 400px;
+            margin-left: 100px;
+            
 
             h1{
                 font-size: rem-calc(80);
