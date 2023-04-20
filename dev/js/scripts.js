@@ -1,7 +1,7 @@
 import {gsap} from "gsap"
 
-gsap.from("logo", {duration:1, alpha:0, delay:0.5});
-gsap.from("nav li", {duration:1, alpha:0, stagger: 0.1, y:"-=15", delay:0.5});
-gsap.from("#hero article", {duration:1, alpha:0});
-gsap.from("#hero h1", {duration:.45, alpha:0, y:"+=25", delay:.5});
-gsap.from("#hero h2", {duration:.45, alpha:0, y:"+=25", delay:.5});
+gsap.from("a", {scale:0, rotation:-90, delay:0.25});
+gsap.from("nav li", {duration:.5, alpha:0, stagger:0.05, y:"-=10", delay:0.25});
+gsap.from("#hero h1", {duration:.75, x:"-=800", delay:.5});
+gsap.from("#hero h2", {duration:1, x:"-=800", delay:.5});
+gsap.from("button", {duration:1.25, x:"-=800", delay:.5});
