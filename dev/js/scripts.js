@@ -15,12 +15,16 @@ function nav(){
     let mm = gsap.matchMedia();
 
     mm.add("(max-width:767px)", () =>{
-    tl.from("a", {scale:0, rotation:-90})
+    tl.from("a", {
+        scale:0, 
+        rotation:-90
+    })
     .from("nav li", {
         duration:.5, 
         alpha:0, 
         stagger:0.05, 
-        y:"-=10"})
+        x:"-=10"
+    })
     ;
     });
 
@@ -30,7 +34,7 @@ function nav(){
         duration:.5, 
         alpha:0, 
         stagger:0.05, 
-        y:"-=10"}) //add stagger to this?
+        y:"-=10"}) 
         ;
         });
 
@@ -39,9 +43,24 @@ function nav(){
 
 function hero(){
 
-    let tl = gsap.timeline({delay:.25});
+    let tl = gsap.timeline({delay:0.25});
+    let mm = gsap.matchMedia();
 
+    mm.add("(max-width:767px)", () =>{
     tl.from("#hero h1", {
+        x:"-=800"
+    })
+    .from("#hero h2", {
+        x:"-=800"
+    })
+    .from("button", {
+        x:"-=800"
+    })
+    ;
+    });
+
+    mm.add("(min-width:768px)", () =>{ 
+        tl.from("#hero h1", {
         x:"-=800", 
         ease: "back.out(2)"
     })
@@ -52,8 +71,9 @@ function hero(){
     .from("button", {
         x:"-=800", 
         ease: "back.out(2)"
-    })
-    ;
+    }) 
+        ;
+        });
 
     return tl;
 }
@@ -64,16 +84,3 @@ mainTl.add(nav())
 .add(hero(), 0)
 
 ;
-
-
-
-
-
-//     stagger:{
-//         //each:0.1,
-//         amount:0.5,
-//         grid:[3,4],
-//         from:"start",//"start", "center", "edges","random", "end"
-//         axis:"y"
-//     }
-// });
