@@ -369,14 +369,6 @@ textarea {
     Footer
 ============= */
 #section-1 {
-  background-image: url("../img/hero.jpg");
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#section-2 {
   background-color: var(--charcoal);
   height: 100vh;
   display: flex;
@@ -384,6 +376,14 @@ textarea {
   align-items: center;
   background-image: url("../img/hero.jpg");
   background-size: cover;
+}
+
+#section-2 {
+  background-color: var(--aqua);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #section-2 #box {
   height: 100px;
