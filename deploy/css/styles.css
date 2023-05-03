@@ -369,14 +369,6 @@ textarea {
     Footer
 ============= */
 #section-1 {
-  background-color: var(--aqua);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#section-2 {
   background-color: var(--charcoal);
   height: 100vh;
   display: flex;
@@ -385,11 +377,26 @@ textarea {
   background-image: url("../img/hero.jpg");
   background-size: cover;
 }
-#section-2 #box {
-  height: 100px;
-  width: 100px;
-  background-color: var(--red);
-  border: 3px solid var(--white);
+
+.img {
+  border-radius: 5;
+}
+
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.gridscroll {
+  display: inline-block;
+}
+
+.gridscroll img {
+  margin-right: 22px;
 }
 
 #section-3 {
