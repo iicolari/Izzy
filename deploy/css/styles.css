@@ -15,8 +15,8 @@ html {
   --black: #000;
   --charcoal: #383838;
   --aqua: #2ee6ef;
-  --yellow: #d2c50a;
-  --darkyellow: #aea309;
+  --red: #D14B45;
+  --pink: #BE7568;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -369,21 +369,59 @@ textarea {
     Footer
 ============= */
 #section-3 {
-  background-color: var(--yellow);
+  background-color: var(--red);
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+}
+#section-3 h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 117px;
+  margin: 0;
+  color: var(--pink);
+  padding-top: 600px;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  #section-3 h1 {
+    font-size: rem-cal(90);
+  }
+}
+@media (min-width: 1024px) {
+  #section-3 h1 {
+    font-size: rem-cal(100);
+  }
 }
 
 #section-1 {
   background-color: var(--charcoal);
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("../img/hero.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+#section-1 h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 117px;
+  margin: 0;
+  color: var(--red);
+  padding-top: 600px;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  #section-1 h1 {
+    font-size: rem-cal(90);
+  }
+}
+@media (min-width: 1024px) {
+  #section-1 h1 {
+    font-size: rem-cal(100);
+  }
 }
 
 .item-1 {

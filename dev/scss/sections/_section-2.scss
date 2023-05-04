@@ -2,11 +2,28 @@
 #section-1{
     background-color: var(--charcoal);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url("../img/hero.jpg");
     background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+    h1{
+                font-size: rem-calc(80);
+                font-weight: 900;
+                line-height: 117px;
+                margin: 0;
+                color: var(--red);
+                padding-top: 600px;
+                padding-left: 10px;
+
+                @include md{
+                    font-size: rem-cal(90);
+                }
+                @include lg{
+                    font-size: rem-cal(100);
+                }
+            }
 
     
 }

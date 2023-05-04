@@ -1,7 +1,26 @@
 #section-3{
-    background-color: var(--yellow);
+    background-color: var(--red);
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    justify-content: left;
+    align-items: left;
+
+            h1{
+                font-size: rem-calc(80);
+                font-weight: 900;
+                line-height: 117px;
+                margin: 0;
+                color: var(--pink);
+                padding-top: 600px;
+                padding-left: 10px;
+
+                @include md{
+                    font-size: rem-cal(90);
+                }
+                @include lg{
+                    font-size: rem-cal(100);
+                }
+            }
+
+
+        }
