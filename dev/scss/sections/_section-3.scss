@@ -1,7 +1,42 @@
-#section-3 {
-	background-color: var(--yellow);
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.item-1 { 
+  background-image: url('../img/chair.jpg');
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.item-2 { 
+  background-image: url('../img/portrait.jpg');
+  margin: 20px;
+}
+
+.item-3 { 
+  background-image: url('../img/type.jpg');
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.item-4 { 
+  background-image: url('../img/mag.jpg');
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
 }

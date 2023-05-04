@@ -15,8 +15,8 @@ html {
   --black: #000;
   --charcoal: #383838;
   --aqua: #2ee6ef;
-  --yellow: #efe22e;
-  --red: #ef4b2e;
+  --yellow: #d2c50a;
+  --darkyellow: #aea309;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -368,6 +368,14 @@ textarea {
 /* =============
     Footer
 ============= */
+#section-3 {
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #section-1 {
   background-color: var(--charcoal);
   height: 100vh;
@@ -378,31 +386,44 @@ textarea {
   background-size: cover;
 }
 
-.img {
-  border-radius: 5;
+.item-1 {
+  background-image: url("../img/chair.jpg");
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-.scroll-container {
-  overflow: auto;
-  white-space: nowrap;
-  padding: 5px 70px 5px 20px;
-  background: transparent;
-  height: 100%;
-  border-radius: 15px;
+.item-2 {
+  background-image: url("../img/portrait.jpg");
+  margin: 20px;
 }
 
-.gridscroll {
-  display: inline-block;
+.item-3 {
+  background-image: url("../img/type.jpg");
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.gridscroll img {
-  margin-right: 22px;
+.item-4 {
+  background-image: url("../img/mag.jpg");
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-#section-3 {
-  background-color: var(--yellow);
-  height: 100vh;
+.gallery-wrap {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
 }
