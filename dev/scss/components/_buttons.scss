@@ -1,3 +1,25 @@
 /* =============
     Buttons
 ============= */
+
+button{
+        font-family: 'Roboto Slab', serif;
+    border: 1px solid var(--red);
+    border-radius: 40px;
+    background-color: transparent;
+    align-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        height: 48px;
+        text-align: center;
+        color: black;
+        margin-top: 635px;
+                margin-left: 300px;
+
+        &:hover{
+            cursor: pointer;
+            background-color: var(--red);
+        }
+}

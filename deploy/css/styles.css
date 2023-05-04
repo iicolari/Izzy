@@ -341,6 +341,27 @@ body {
 /* =============
     Buttons
 ============= */
+button {
+  font-family: "Roboto Slab", serif;
+  border: 1px solid var(--red);
+  border-radius: 40px;
+  background-color: transparent;
+  align-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 48px;
+  text-align: center;
+  color: black;
+  margin-top: 635px;
+  margin-left: 300px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--red);
+}
+
 /* =============
     Forms
 ============= */
@@ -485,7 +506,7 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 
 .item {
   flex: 1;
-  height: 400px;
+  height: 600px;
   background-position: center;
   background-size: cover;
   background-repeat: none;
