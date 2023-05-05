@@ -1,5 +1,17 @@
-//import { gsap } from "gsap";
+import { gsap } from "gsap";
 
-//QUIZ
+//QUIZ section 1
+
+
+
+
+//QUIZ section 2
+
+
+
+
+//QUIZ section 3
+
+
 
 
