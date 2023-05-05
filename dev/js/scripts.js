@@ -3,19 +3,28 @@ import { gsap } from "gsap";
 //QUIZ section 1
 
 
+// gsap.from(".red", {duration:1, x:0})
+// gsap.to(".red", {duration:2, y:0, delay:2})
+
+// gsap.from(".blue", {duration:1, x:350})
+// gsap.to(".blue", {duration:2, y:300, delay:2})
 
 
 //QUIZ section 2
 
+gsap.from(".graph", {duration:2, alpha:0})
+gsap.from(".green", {duration:3, scale:0})
 
 
+gsap.from(".red", {duration:1, x:0})
+gsap.to(".red", {duration:2, y:0, delay:2})
+
+gsap.from(".blue", {duration:1, x:350})
+gsap.to(".blue", {duration:2, y:300, delay:2})
 
 //QUIZ section 3
 
 
-
-
-import { gsap } from "gsap";
 
 
 //Comments
