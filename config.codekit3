@@ -17,6 +17,14 @@
       "oAP" : "\/.gitattributes",
       "oF" : 0
     },
+    "\/build\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/.gitignore",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -29,69 +37,34 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/chair.jpg" : {
-      "ft" : 16384,
-      "iS" : 157172,
-      "jF" : 0,
+    "\/deploy\/img\/challenge1.gif" : {
+      "ft" : 4194304,
+      "iS" : 65343,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/chair.jpg",
+      "oAP" : "\/deploy\/img\/challenge1.gif",
       "oF" : 0,
-      "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
-      "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/hero.jpg" : {
-      "ft" : 16384,
-      "iS" : 185818,
-      "jF" : 0,
+    "\/deploy\/img\/challenge2.gif" : {
+      "ft" : 4194304,
+      "iS" : 216814,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero.jpg",
+      "oAP" : "\/deploy\/img\/challenge2.gif",
       "oF" : 0,
-      "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
-      "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/mag.jpg" : {
-      "ft" : 16384,
-      "iS" : 115681,
-      "jF" : 0,
+    "\/deploy\/img\/challenge3.gif" : {
+      "ft" : 4194304,
+      "iS" : 185249,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/mag.jpg",
+      "oAP" : "\/deploy\/img\/challenge3.gif",
       "oF" : 0,
-      "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/portrait.jpg" : {
-      "ft" : 16384,
-      "iS" : 473371,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/portrait.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/type.jpg" : {
-      "ft" : 16384,
-      "iS" : 258388,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/type.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
       "rq" : 75
     },
     "\/deploy\/index.html" : {
@@ -100,6 +73,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
+      "oF" : 0
+    },
+    "\/deploy\/instructions.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/instructions.html",
       "oF" : 0
     },
     "\/deploy\/js\/scripts-min.js" : {
@@ -113,28 +94,20 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/section-1.kit" : {
+    "\/dev\/content\/content.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/section-1.html",
+      "oAP" : "\/dev\/content\/content.html",
       "oF" : 0
     },
-    "\/dev\/content\/section-2.kit" : {
+    "\/dev\/content\/instructions-content.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/section-2.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/section-3.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/section-3.html",
+      "oAP" : "\/dev\/content\/instructions-content.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.html" : {
@@ -161,19 +134,11 @@
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 0
     },
-    "\/dev\/global\/header.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/global\/header.html",
-      "oF" : 0
-    },
     "\/dev\/global\/header.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
@@ -185,6 +150,14 @@
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
+    "\/dev\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/index.html",
+      "oF" : 0
+    },
     "\/dev\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -193,16 +166,13 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
     },
-    "\/dev\/js\/scripts-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
+    "\/dev\/instructions.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/js\/scripts-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
+      "oAP" : "\/dev\/instructions.html",
+      "oF" : 0
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 4,
@@ -365,7 +335,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_section-1.scss" : {
+    "\/dev\/scss\/sections\/_content.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -374,53 +344,11 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_section-1.css",
+      "oAP" : "\/dev\/scss\/sections\/_content.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_section-2.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_section-2.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_section-3.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_section-3.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/styles.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/styles-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
@@ -458,6 +386,14 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
     },
     "\/README.md" : {
       "cB" : 0,
