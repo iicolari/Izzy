@@ -29,8 +29,8 @@ tl .to(".portfolio div", {
 },
     x: -200,
     width: 600,
-    start: 'top 60%',
-    end: 'top 40%'
+    start: 'top 50%',
+    end: 'top 50%'
 })
 
 
