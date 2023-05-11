@@ -1,14 +1,40 @@
 
+#section-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding-top: 20vh;
+  align-items: center;
+  background-color: black;
+}
+
 .item-1 { 
   background-image: url('../img/chair.jpg');
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+
+  &:hover{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+        }
 }
 
 .item-2 { 
   background-image: url('../img/portrait.jpg');
   margin: 20px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+
+  &:hover{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+        }
 }
 
 .item-3 { 
@@ -16,6 +42,14 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+
+  &:hover{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+        }
 }
 
 .item-4 { 
@@ -23,17 +57,16 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+
+  &:hover{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+        }
 }
 
-
-.section-2 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100vh;
-  padding-top: 20vh;
-  align-items: center;
-}
 
 .item {
   flex: 1;
@@ -42,3 +75,16 @@
   background-size: cover;
   background-repeat: none;
 }
+
+.title{
+  color: white;
+  text-align: center
+}
+
+// p.item{
+//   display:none;
+// }
+
+// .item:hover + p{
+//   display:block;
+// }

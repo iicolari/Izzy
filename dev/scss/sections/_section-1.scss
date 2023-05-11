@@ -4,15 +4,26 @@
     display: flex;
     justify-content: left;
     align-items: left;
-
+    padding-top: 600px;
+    padding-left: 10px;
+        
+        .portfolio{
+        display: flex;
+        flex-direction: row;
+    }
+    
+        .container{
+            overflow:hidden;
+            
+        }
             h1{
                 font-size: rem-calc(80);
                 font-weight: 900;
-                line-height: 117px;
+                line-height: 80px;
                 margin: 0;
                 color: var(--pink);
-                padding-top: 600px;
-                padding-left: 10px;
+                
+
 
                 @include md{
                     font-size: rem-cal(90);

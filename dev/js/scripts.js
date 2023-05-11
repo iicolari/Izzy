@@ -5,58 +5,39 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
+let tl = gsap.timeline();
 
+tl .to(".portfolio div", {
+    scrollTrigger: {
+        trigger: ".portfolio div",
+        toggleActions: "restart pause resume restart",
+        scrub: true,
+        start: 'top 60%',
+        end: 'top 5%'
+},
+    y: 1000,
+    stagger: 1
+    
+})
 
-
-
-// gsap.utils.toArray(".section-1").forEach(section => {
-// 	let tl = gsap.timeline({
-// 			scrollTrigger: {
-// 				trigger: section,
-// 				start: "center center",
-//         // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
-// 				end: () => "+=" + section.offsetWidth, 
-// 				scrub: true,
-// 				pin: true,
-//         anticipatePin: 1
-// 			},
-// 			defaults: {ease: "none"}
-// 		});
-// 	// animate the container one way...
-// 	tl.fromTo(section.querySelector("#section-1"), { xPercent: 100, x: 0}, {xPercent: 0})
-// 	  // ...and the image the opposite way (at the same time)
-// 	  .fromTo(section.querySelector("h1"), {xPercent: -100, x: 0}, {xPercent: 0}, 0);
-// });
-
-
-
-
-
-
-
-
-gsap.from("button", {
+.from("button", {
     scrollTrigger: {
         trigger: "button",
         toggleActions: "restart pause resume restart",
-        scrub: true
+        scrub: true,
+        markers:true
 },
     x: -200,
     width: 600,
-    start: "20px 80%",
-    duration: .5
-});
+    start: 'top 60%',
+    end: 'top 40%'
+})
 
 
+function Anim (){
+    let gallery = document.querySelectorAll("#section-2");
 
-
-
-
-
-
-let delSections = document.querySelectorAll(".section-2");
-
-delSections.forEach(section => {
+gallery.forEach(section => {
   
   let imageAnim = gsap.to(section.querySelector("div"), {
     y: "-50vh",
@@ -67,7 +48,7 @@ delSections.forEach(section => {
   let progressTo = gsap.quickTo(imageAnim, "progress", {ease: "power3", duration: parseFloat(section.dataset.scrub) || 0.1});
   
   gsap.to(section.querySelector(".item-2"), {
-    y: "-20vh",
+    y: "-30vh",
     ease: "none",
     scrollTrigger: {
       scrub: true,
@@ -103,6 +84,10 @@ delSections.forEach(section => {
   });
 
 });
+}
+
+tl.add(Anim)
+
 
 
 
