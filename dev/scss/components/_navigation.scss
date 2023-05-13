@@ -1,8 +1,7 @@
 /* =============
     Navigation
 ============= */
-
-#header{
+nav{
     
     height:100%;
     
@@ -19,14 +18,13 @@
             margin-left: 4vw;
 
             a:link, a:visited{
-                font-family: 'Roboto Slab', serif;
                 color:var(--blue);
                 transition: 0.25s;
                 font-size: rem-calc(18);
                 font-weight: 300;
 
                 &:hover, &:active{
-                    color: var(--yellow);
+                    color: var(--purple);
                 }
 
             }

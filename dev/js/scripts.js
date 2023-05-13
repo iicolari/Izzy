@@ -24,8 +24,7 @@ tl .to(".portfolio div", {
     scrollTrigger: {
         trigger: "button",
         toggleActions: "restart pause resume restart",
-        scrub: true,
-        markers:true
+        scrub: true
 },
     x: -200,
     width: 600,
