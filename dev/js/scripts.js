@@ -4,11 +4,6 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
 
-
-gsap.set("#mouth-2", {autoAlpha:0});
-gsap.set("#mouth-3", {autoAlpha:0});
-gsap.set("#mouth-4", {autoAlpha:0});
-gsap.set("#mouth-5", {autoAlpha:0});
 gsap.set("#logo", {scale:.75, transformOrigin:"center"});
 
 function start(){
@@ -57,7 +52,7 @@ function transition(){
 
     tl.to("#dot-2", {
         delay: 2,
-        duration:.5, 
+        duration:.25, 
         scale: 0,
         transformOrigin: "center"
     })
@@ -71,25 +66,25 @@ function transition(){
 
     .to("#dot-1, #dot-3", {
         delay: 2,
-        duration:.5, 
+        duration:.25, 
         y: -5
     }, 0)
 
     .from("#antenna", {
-        delay: 2.25,
-        duration:.5, 
+        delay: 2,
+        duration:.25, 
         y: 20
     }, 0)
 
     .from("#left-ear", {
-        delay: 2.5,
-        duration:.5, 
+        delay: 2.25,
+        duration:.25, 
         x: 5
     }, 0)
 
     .from("#right-ear", {
-        delay: 2.75,
-        duration:.5, 
+        delay: 2.5,
+        duration:.25, 
         x: -5
     }, 0)
 
@@ -105,11 +100,74 @@ function final(){
     let tl = gsap.timeline();
 
    tl.from("#signal", {
-        delay: 3.5,
+        delay: 3.4,
+        duration: .25,
         scale: 0,
+        transformOrigin: "center",
+        opacity: 1, 
+        ease: "rough({ strength: 1.5, points: 10, template: none.out, taper: none, randomize: true, clamp: false })"
+    })
+
+    .to("#mouth-1", {
+        delay: 0,
+        duration:.1, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+
+    .from("#mouth-2", {
+        delay: 0,
+        duration:.2, 
+        scaleY: 0,
         transformOrigin: "center"
     })
-}
+
+    .to("#mouth-2", {
+        delay: 0,
+        duration:.1, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+
+    .from("#mouth-3", {
+        delay: 0,
+        duration:.2, 
+        scaleY: 0,
+        transformOrigin: "center"
+    })
+
+    .to("#mouth-3", {
+        delay: 0,
+        duration:.1, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+
+    .from("#mouth-4", {
+        delay: 0,
+        duration:.2, 
+        scaleY: 0,
+        transformOrigin: "center"
+    })
+
+    .to("#mouth-4", {
+        delay: 0,
+        duration:.1, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+
+    .from("#mouth-5", {
+        delay: 0,
+        duration:.2, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+
+
+
+
+        }
 
 
 
