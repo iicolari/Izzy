@@ -32,6 +32,8 @@ function start(){
         stagger: .2,
         y: 0, 
         ease:"power4.out"});
+
+        return tl;
     }
 
 
@@ -45,6 +47,8 @@ function change(){
         rotate: -10,
         //ScaleY: .5, 
         ease:"power4.out"})
+
+        return tl;
     }
 
 function transition(){
@@ -94,6 +98,8 @@ function transition(){
         rotate: 0,
         //ScaleY: .5, 
         ease:"power4.out"}), 0
+
+        return tl;
     }
 
 function final(){
@@ -164,7 +170,7 @@ function final(){
         transformOrigin: "center"
         })
 
-
+        return tl;
 
 
         }
