@@ -11,25 +11,25 @@ function start(){
 
     tl.to("#dot-1, #dot-2, #dot-3", {
         duration:.1, 
-        stagger: .2,
+        stagger: .1,
         y: -10, 
         ease:"power4.out"})
 
         .to("#dot-1, #dot-2, #dot-3", {
         duration:.1, 
-        stagger: .2,
+        stagger: .1,
         y: 0, 
         ease:"power4.out"})
         
         .to("#dot-1, #dot-2, #dot-3", {
         duration:.1, 
-        stagger: .2,
+        stagger: .1,
         y: -10, 
         ease:"power4.out"})
 
         .to("#dot-1, #dot-2, #dot-3", {
         duration:.1, 
-        stagger: .2,
+        stagger: .1,
         y: 0, 
         ease:"power4.out"});
 
@@ -45,7 +45,7 @@ function change(){
         duration:1, 
         transformOrigin: "bottom left",
         rotate: -10,
-        //ScaleY: .5, 
+        //scaleY: ".75", 
         ease:"power4.out"})
 
         return tl;
@@ -96,13 +96,13 @@ function transition(){
         duration:1, 
         transformOrigin: "bottom left",
         rotate: 0,
-        //ScaleY: .5, 
+        //scaleY: 1, 
         ease:"power4.out"}), 0
 
         return tl;
     }
 
-function final(){
+function blink(){
     let tl = gsap.timeline();
 
    tl.from("#signal", {
@@ -120,8 +120,13 @@ function final(){
         scaleY: 0,
         transformOrigin: "center"
         })
+    }
 
-    .from("#mouth-2", {
+
+    function mouth(){
+    let tl = gsap.timeline({delay: 3.2, repeat: 2});
+
+   tl.from("#mouth-2", {
         delay: 0,
         duration:.2, 
         scaleY: 0,
@@ -182,7 +187,9 @@ let mainTl = gsap.timeline();
 mainTl.add(start)
 .add(change, ">")
 .add(transition, ">")
-.add(final, ">")
+.add(blink, ">")
+.add(mouth, ">")
+
 
 ;
 
