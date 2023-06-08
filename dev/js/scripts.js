@@ -16,6 +16,7 @@ function start(){
         ease:"power4.out"})
 
         .to("#dot-1, #dot-2, #dot-3", {
+        delay: .1,
         duration:.1, 
         stagger: .1,
         y: 0, 
@@ -41,11 +42,11 @@ function change(){
     let tl = gsap.timeline();
 
     tl.to("#logo", {
-        delay: 2,
-        duration:1, 
+        delay: 1.75,
+        duration:.85, 
         transformOrigin: "bottom left",
         rotate: -10,
-        //scaleY: ".75", 
+        //scaleY: 0.9, 
         ease:"power4.out"})
 
         return tl;
@@ -55,39 +56,39 @@ function transition(){
     let tl = gsap.timeline();
 
     tl.to("#dot-2", {
-        delay: 2,
+        delay: 1.8,
         duration:.25, 
         scale: 0,
         transformOrigin: "center"
     })
 
     .from("#mouth-1", {
-        delay: 2,
+        delay: 1.8,
         duration:.5, 
         scaleY: 0,
         transformOrigin: "center"
     }, 0)
 
     .to("#dot-1, #dot-3", {
-        delay: 2,
+        delay: 1.8,
         duration:.25, 
         y: -5
     }, 0)
 
     .from("#antenna", {
-        delay: 2,
+        delay: 1.9,
         duration:.25, 
         y: 20
     }, 0)
 
     .from("#left-ear", {
-        delay: 2.25,
+        delay: 2,
         duration:.25, 
         x: 5
     }, 0)
 
     .from("#right-ear", {
-        delay: 2.5,
+        delay: 2.1,
         duration:.25, 
         x: -5
     }, 0)
@@ -106,17 +107,18 @@ function blink(){
     let tl = gsap.timeline();
 
    tl.from("#signal", {
-        delay: 3.4,
+        delay: 3,
         duration: .25,
         scale: 0,
         transformOrigin: "center",
         opacity: 1, 
-        ease: "rough({ strength: 1.5, points: 10, template: none.out, taper: none, randomize: true, clamp: false })"
+        ease: "rough({ strength: 1.5, points: 10, template: none.out, taper: none, randomize: true, clamp: false })",
+        repeat: 2
     })
 
     .to("#mouth-1", {
         delay: 0,
-        duration:.1, 
+        duration:.75, 
         scaleY: 0,
         transformOrigin: "center"
         })
@@ -124,7 +126,7 @@ function blink(){
 
 
     function mouth(){
-    let tl = gsap.timeline({delay: 3.2, repeat: 2});
+    let tl = gsap.timeline({delay: 2.5, repeat: 3});
 
    tl.from("#mouth-2", {
         delay: 0,
@@ -176,10 +178,71 @@ function blink(){
         })
 
         return tl;
-
-
         }
 
+function transitionback(){
+    let tl = gsap.timeline();
+
+   tl.to("#logo", {
+    delay: 7,
+    duration: .25,
+    rotate: -10, 
+    ease:"power4.out"
+   })
+
+    .to("#mouth-5", {
+        duration: .25,
+        scale: 0,
+        transformOrigin: "center", 
+        ease:"power4.out"
+    })
+
+    .to("#dot-2", {
+        delay: 0,
+        duration: .25,
+        scale: 1, 
+        ease:"power4.out"
+    })
+
+    .to("#dot-1, #dot-3", {
+       delay: 0,
+        y: 0,
+        ease:"power4.out"
+    })
+
+    .to("#logo", {
+        rotate: 0,
+        duration: .25, 
+        ease:"power4.out"
+    })
+
+}
+
+/* 
+function chat(){
+    let tl = gsap.timeline();
+
+   tl.to("#antenna", {
+        delay: 0,
+        y: 0
+   })
+
+   .to("#left-ear", {
+        delay: 0,
+        x: 0
+   })
+
+   .to("#right-ear", {
+        delay: 0,
+        x: 0
+   })
+
+    .to("#logo", {
+        duration: 1,
+        rotate: 0
+   })
+}
+ */
 
 
 
@@ -189,7 +252,8 @@ mainTl.add(start)
 .add(transition, ">")
 .add(blink, ">")
 .add(mouth, ">")
-
+.add(transitionback, ">")
+//.add(chat, ">")
 
 ;
 
