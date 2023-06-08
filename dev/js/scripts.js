@@ -4,6 +4,8 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
 
+gsap.set("#5-wing", {alpha: 1});
+
 
 function start(){
     let tl = gsap.timeline();
