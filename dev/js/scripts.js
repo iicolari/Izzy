@@ -52,6 +52,7 @@ function first(){
 
     tl.to("#dot-2", {
         duration:.1, 
+        y: 10,
         scaleY: 0.9,
         transformOrigin: "bottom",
         ease:"power4.out"})
@@ -59,28 +60,28 @@ function first(){
         .to("#dot-2", {
         duration:.3, 
         scaleY: 1.2,
-        y: -10, 
+        y: -3, 
         transformOrigin: "top",
         ease:"power4.out"})
         
         .to("#dot-2", {
         duration:.1, 
         scaleY: 1,
-        y: -10, 
+        y: -3, 
         transformOrigin: "top",
         ease:"power4.out"})
 
         .to("#dot-2", {
         duration:.2, 
         scaleY: 1.2,
-        y: 0, 
+        y: 9, 
         transformOrigin: "bottom",
         ease:"power4.out"})
 
         .to("#dot-2", {
         duration:.1, 
         scaleY: 1,
-        y: 0, 
+        y: 9, 
         transformOrigin: "bottom",
         ease:"power4.out"})
 
@@ -93,6 +94,7 @@ function first(){
 
     tl.to("#dot-3", {
         duration:.1, 
+        y: 2,
         scaleY: 0.9,
         transformOrigin: "bottom",
         ease:"power4.out"})
