@@ -4,7 +4,7 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
 
-gsap.set("#logo", {scale:.75, transformOrigin:"center"});
+gsap.set("#entire", {scale:.5, transformOrigin:"center"});
 
 function first(){
     let tl = gsap.timeline({repeat: 1});
@@ -139,7 +139,7 @@ function change(){
         duration:.85, 
         transformOrigin: "bottom left",
         rotate: -10,
-        //scaleY: 1.2,
+        scaleY: 1.2,
         ease:"power4.out"})
 
         return tl;
@@ -152,13 +152,13 @@ function transition(){
         delay: 1.8,
         duration:.25, 
         scale: 0,
+        y: 0,
         transformOrigin: "center"
     })
 
-    .from("#mouth-1", {
+    .to("#mouth-1", {
         delay: 1.8,
-        duration:.5, 
-        scaleY: 0,
+        scaleY: 1,
         transformOrigin: "center"
     }, 0)
 
@@ -190,7 +190,7 @@ function transition(){
         duration:1, 
         transformOrigin: "bottom left",
         rotate: 0,
-        //scaleY: 1, 
+        scaleY: 1, 
         ease:"power4.out"}), 0
 
         return tl;
@@ -209,12 +209,11 @@ function blink(){
         repeat: 2
     })
 
-    .to("#mouth-1", {
-        delay: 0,
-        duration:.75, 
-        scaleY: 0,
-        transformOrigin: "center"
-        })
+    .to("#signal", {
+        scale: 0
+    })
+    
+        return tl;
 
     }
 
@@ -222,9 +221,16 @@ function blink(){
 
 
     function mouth(){
-    let tl = gsap.timeline({delay: 2.5, repeat: 3});
+    let tl = gsap.timeline({delay: 2.5, repeat: 1});
 
-   tl.from("#mouth-2", {
+   tl.to("#mouth-1", {
+        delay: 0,
+        duration:.1, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+   
+   .from("#mouth-2", {
         delay: 0,
         duration:.2, 
         scaleY: 0,
@@ -273,6 +279,20 @@ function blink(){
         transformOrigin: "center"
         })
 
+        .to("#mouth-5", {
+        delay: 0,
+        duration:.1, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+
+        .from("#mouth-1", {
+        delay: 0,
+        duration:.2, 
+        scaleY: 0,
+        transformOrigin: "center"
+        })
+
         return tl;
         }
 
@@ -286,7 +306,7 @@ function changetwo(){
         duration:.85, 
         transformOrigin: "bottom left",
         rotate: -10,
-        //scaleY: 1.2,
+        scaleY: 1.2,
         ease:"power4.out"})
 
         return tl;
@@ -299,13 +319,14 @@ function transitiontwo(){
         delay: 1.8,
         duration:.25, 
         scale: 1,
+        y: 8,
         transformOrigin: "center"
     })
 
-    .from("#mouth-1", {
+    .to("#mouth-1", {
         delay: 1.8,
         duration:.5, 
-        scaleY: 1,
+        scaleY: 0,
         transformOrigin: "center"
     }, 0)
 
@@ -337,7 +358,7 @@ function transitiontwo(){
         duration:1, 
         transformOrigin: "bottom left",
         rotate: 0,
-        //scaleY: 1, 
+        scaleY: 1, 
         ease:"power4.out"}), 0
 
         return tl;
@@ -377,10 +398,10 @@ function chat(){
 
 let mainTl = gsap.timeline();
 mainTl.add(first)
-.add(second, ">")
-.add(third, ">")
-.add(change, ">")
-.add(transition, ">")
+.add(second)
+.add(third)
+.add(change)
+.add(transition)
 .add(blink, ">")
 .add(mouth, ">")
 .add(changetwo, ">")
