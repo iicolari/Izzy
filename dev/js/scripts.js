@@ -31,7 +31,7 @@ function first(){
 
     tl.from("#two", {
         delay: 2.5,
-        duration:.2, 
+        duration:.3, 
         scale: 1,
         transformOrigin: "bottom right", 
         rotate: -50,
@@ -39,7 +39,7 @@ function first(){
         ease:"back.out"})
 
         .from("#three", {
-        duration:.2, 
+        duration:.3, 
         scale: 0,
         transformOrigin: "bottom left", 
         rotate: -50,
@@ -47,7 +47,7 @@ function first(){
         ease:"back.out"})
 
         .from("#four", {
-        duration:.2, 
+        duration:.3, 
         scale: 0,
         transformOrigin: "bottom left", 
         rotate: -50,
@@ -55,7 +55,7 @@ function first(){
         ease:"back.out"})
 
         .from("#five", {
-        duration:.2, 
+        duration:.3, 
         scale: 0,
         transformOrigin: "top left", 
         rotate: -50,
@@ -67,70 +67,62 @@ function first(){
 
 
 function second(){
-    let tl = gsap.timeline();
+    let tl = gsap.timeline({delay: 4, duration:.5});
 
     tl.from("#wing-two", {
-        delay: 3.5,
-        duration:.34, 
         scale: 0,
         transformOrigin: "bottom left", 
         rotate: -50,
         ease:"back.out"}, 0)
 
         .from("#wing-three", {
-        duration:.35, 
         scale: 0,
         transformOrigin: "bottom left", 
         rotate: -50,
         ease:"back.out"}, 0)
 
         .from("#wing-four", {
-        duration:.35, 
         scale: 0,
         transformOrigin: "top left", 
         rotate: -50,
         ease:"back.out"}, 0)
 
         .from("#wing-five", {
-        duration:.35, 
         scale: 0,
         transformOrigin: "top right", 
         rotate: -50,
         ease:"back.out"}, 0)
 
         .to("#wing-one", {
-        duration:.35, 
         scale: 1,
         transformOrigin: "top right", 
         rotate: 0,
-        //x: -18,
-        y: -20,
+        y: -21,
         ease:"back.out"}, 0)
 
         return tl;
     }
 
-/* function final(){
+function final(){
     let tl = gsap.timeline();
 
     tl.to("#logo", {
-        delay: 6,
+        delay: 4,
         duration:2, 
-        scale: 0,
         transformOrigin: "center", 
-        rotate: "-125",
+        rotate: "360",
         ease:"power4.out"})
 
         return tl;
-    } */
+    }
 
 
 
 let maintl = gsap.timeline();
-maintl.add(start)
-.add(first)
-.add(second)
-//.add(final)
+maintl.add(start, "<")
+.add(first, "<")
+.add(second, "<")
+.add(final)
 
 ;
 
